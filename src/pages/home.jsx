@@ -8,6 +8,7 @@ function Home() {
     <main className="timeline">
       <Header/>
       <TweetEditor/>
+      <Tweets />
     </main>
   );
 }

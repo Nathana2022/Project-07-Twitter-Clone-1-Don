@@ -1,16 +1,6 @@
-import PropTypes from 'prop-types'
-import React, { Component } from 'react'
+import React from 'react'
+import profile from '../images/tweet-profile-photo'
 
-export class Tweets extends Component {
-  static propTypes = {}
-
-  render() {
-    return (
-      <div>
-        Tweets
-      </div>
-    )
-  }
-}
+<div>Tweets</div>
 
 export default Tweets
