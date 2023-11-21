@@ -29,6 +29,11 @@ body{
     border-bottom: 1px solid #2F3336;
 }
 
+.header button {
+    background-color: transparent;
+    border: none;
+}
+
 .top-tweets {
     width: 1.5rem;
     height: auto;
