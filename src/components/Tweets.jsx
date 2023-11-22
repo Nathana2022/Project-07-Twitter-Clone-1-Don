@@ -188,7 +188,7 @@ function Tweets() {
             email:"@mkadimart ",
             dure:". 1j"
         }],
-        tweet:"La discipline clé du succés",
+        tweet:"La pression électorale pèse lourdement sur la population. Les attentes, les promesses et les enjeux politiques créent un climat de tension. Il est crucial de prendre du recul, de s'informer et de voter en conscience pour défendre nos valeurs et nos intérêts. #Élections2023 #PressionÉlectorale",
         phototweet:Election,
         iconLike :[{
     
