@@ -57,7 +57,7 @@ function Tweets() {
             dure:"2h"
         }],
         tweet:"Gardening boomed during the pandemic. Six Black writers share how it has helped them re-establish, and reimagine, a connection to cultivation and the land",
-        phototweet:Election,
+        phototweet:TweetImage,
         iconLike :[{
     
             commentIcon:TweetReplies,
@@ -189,7 +189,7 @@ function Tweets() {
             dure:". 1j"
         }],
         tweet:"La discipline clé du succés",
-        phototweet:VideoTweet,
+        phototweet:Election,
         iconLike :[{
     
             commentIcon:TweetReplies,
