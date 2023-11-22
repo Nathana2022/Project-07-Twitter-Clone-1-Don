@@ -10,7 +10,7 @@ import TweetImage from '../images/tweet-image.png'
 import TweetLogo from '../images/Logo Twitter.png'
 import Article from '../images/MKDART.png'
 import Election from '../images/PEUPLE ET ELECTION.png'
-import PostElection from '../images/PEUPLE ET ELECTION.png'
+import PostElection from '../images/PostElection.png'
 import Don from '../images/IconDon.png'
 import Tweet from './Tweet'
 
