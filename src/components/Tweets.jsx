@@ -8,7 +8,8 @@ import TweetShare from '../images/GroupT.svg'
 import LogoCNN from '../images/LogoCNN.png'
 import TweetImage from '../images/tweet-image.png'
 import TweetLogo from '../images/Logo Twitter.png'
-import VideoTweet from '../images/Discipline_avec_Coby.mp4'
+import Article from '../images/MKDART.png'
+import Election from '../images/PEUPLE ET ELECTION.png'
 import Tweet from './Tweet'
 
 function Tweets() {
@@ -56,7 +57,7 @@ function Tweets() {
             dure:"2h"
         }],
         tweet:"Gardening boomed during the pandemic. Six Black writers share how it has helped them re-establish, and reimagine, a connection to cultivation and the land",
-        phototweet:TweetImage,
+        phototweet:Election,
         iconLike :[{
     
             commentIcon:TweetReplies,
@@ -179,13 +180,13 @@ function Tweets() {
     ],
     },
     {
-        image:TweetLogo,
+        image:Article,
 
         user :[{
-            title:"Twitter",
+            title:"MKADIMART",
             certificateIcon: CerificateIcons,
-            email:"@Twitter",
-            dure:"Oct 29"
+            email:"@mkadimart ",
+            dure:". 1j"
         }],
         tweet:"La discipline clé du succés",
         phototweet:VideoTweet,
