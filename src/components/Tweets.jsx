@@ -10,6 +10,8 @@ import TweetImage from '../images/tweet-image.png'
 import TweetLogo from '../images/Logo Twitter.png'
 import Article from '../images/MKDART.png'
 import Election from '../images/PEUPLE ET ELECTION.png'
+import PostElection from '../images/PEUPLE ET ELECTION.png'
+import Don from '../images/IconDon.png'
 import Tweet from './Tweet'
 
 function Tweets() {
@@ -190,6 +192,39 @@ function Tweets() {
         }],
         tweet:"La pression électorale pèse lourdement sur la population. Les attentes, les promesses et les enjeux politiques créent un climat de tension. Il est crucial de prendre du recul, de s'informer et de voter en conscience pour défendre nos valeurs et nos intérêts. #Élections2023 #PressionÉlectorale",
         phototweet:Election,
+        iconLike :[{
+    
+            commentIcon:TweetReplies,
+            CountComment:'6.8K' 
+        },
+        {
+    
+            commentIcon:TweetPart,
+            CountComment:'36.6K'
+        },
+        {
+    
+            commentIcon:TweetLike,
+            CountComment:'267.1K'
+        },
+        {
+    
+            commentIcon:TweetShare
+            
+        }
+    ],
+    },
+    {
+        image:Don,
+
+        user :[{
+            title:"Don Nathanaël",
+            certificateIcon: CerificateIcons,
+            email:"@nathanael_don ",
+            dure:". Aug 15"
+        }],
+        tweet:"Maponomi esi ebelemi, Zua temps, Kanisa MALAMU, TALA Malamu, NANI OKOPESA KITI!",
+        phototweet:PostElection,
         iconLike :[{
     
             commentIcon:TweetReplies,
