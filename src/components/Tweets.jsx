@@ -12,7 +12,6 @@ import Article from '../images/MKDART.png'
 import Election from '../images/PEUPLE ET ELECTION.png'
 import PostElection from '../images/PostElection.png'
 import Don from '../images/iconDon.png'
-import Discipline from '../images/Discipline_avec_Coby.mp4'
 import Tweet from './Tweet'
 
 function Tweets() {
@@ -126,8 +125,7 @@ function Tweets() {
             dure:"Oct 4"
         }],
         tweet:"Hello literally everyone",
-        //phototweet:null,
-        videotweet:Discipline, 
+        phototweet:null,
         iconLike :[{
     
             commentIcon:TweetReplies,
