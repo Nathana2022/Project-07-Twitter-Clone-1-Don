@@ -11,13 +11,14 @@ import TweetLogo from '../images/Logo Twitter.png'
 import Article from '../images/MKDART.png'
 import Election from '../images/PEUPLE ET ELECTION.png'
 import PostElection from '../images/PostElection.png'
-import Don from '../images/IconDon.png'
+import Don from '../images/iconDon.png'
+import Discipline from '../images/Discipline_avec_Coby.mp4'
 import Tweet from './Tweet'
 
 function Tweets() {
     const tweetsObject =[
         {
-        image:TweetProfile,
+        image:TweetProfile, 
 
         user :[{
             title:"CNN",
@@ -125,7 +126,8 @@ function Tweets() {
             dure:"Oct 4"
         }],
         tweet:"Hello literally everyone",
-        phototweet:null,
+        //phototweet:null,
+        videotweet:Discipline, 
         iconLike :[{
     
             commentIcon:TweetReplies,
