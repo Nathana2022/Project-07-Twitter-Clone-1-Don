@@ -53,6 +53,8 @@ body{
     border-bottom: 1px solid #2F3336;
 }
 
+  
+
 .avatar {
     flex: 0 0 70px;
     /*padding: 0 rem;*/
@@ -184,6 +186,11 @@ body{
     gap: 5rem;
     color: grey;
     font-size: 1rem;
+}
+
+.tweet-actions :hover{
+    color: rgb(232, 147, 201);
+    fill: red;
 }
 
 
@@ -346,9 +353,15 @@ span.sl-notification {
 /* Trends Section */
 
 .tr-section{
-    width: 360px;
+    /* width: 360px;
     height: 1080px;
-    flex-shrink: 0;
+    flex-shrink: 0; */
+    flex: 0 0 600px;
+    position: sticky;
+    padding-top: 2rem;
+    top: 0;
+    height: 100%;
+    border-left:1px solid #2F3336 ;
     background: var(--Black, #000);
     margin-left: 10px;
 }
@@ -364,6 +377,7 @@ span.sl-notification {
     background: var(--Trends-Color, #202327);
     margin-top: 10px;
     margin-bottom: 10px;
+    /* position: fixed; */
 }
 
 .search-icon{
