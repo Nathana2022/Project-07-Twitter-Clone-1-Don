@@ -21,7 +21,9 @@ function Tweet({Fed}) {
                             <p className='tweet-text'>{element.tweet} </p>
                             <div className='tweet-image'>
                                 <img  src={element.phototweet} alt="" />
+                                <video src={element.videotweet}></video>
                             </div>
+                            
                         </div>
                         <div className='tweet-actions'>
                             {element.iconLike.map((elementLike, Id)=>(
