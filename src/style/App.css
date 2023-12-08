@@ -506,11 +506,13 @@ span.sl-notification {
     height: 30px; */
 }
 
+#btn{
+    cursor: pointer;
+    pointer-events: auto;
+}
 .follow-tex{
     display: flex;
     flex-direction: column;
-    
-    
 }
 
 .follow-body{

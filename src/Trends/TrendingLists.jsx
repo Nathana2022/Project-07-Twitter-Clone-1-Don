@@ -5,9 +5,9 @@ function TrendingLists() {
 const squid = [
   {
     id: 1,
-    description : "Trending in Turkey",
-    PSEUDO : "SQUID",
-    count : "2,066 Tweets",
+    description : "Trending in Congo-Kinshasa",
+    PSEUDO : "#RIDICULE",
+    count : "8,966 Tweets",
     point : "..."
   },
   {

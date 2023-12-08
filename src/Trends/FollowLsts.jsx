@@ -45,10 +45,10 @@ function FollowLsts() {
             <span>{element.lienProfin} </span>
           </div>
           </div>
-          <button className='follow-text'>Follow</button>
+          <button id='btn' className='follow-text'>Follow</button>
       </div>
       )}
-      <p className='show-more'>Show more</p>
+      <a href='#' className='show-more'>Show more</a>
     </div>
   )
 }
