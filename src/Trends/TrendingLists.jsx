@@ -49,7 +49,7 @@ const squid = [
           <span>{element.count} </span>
         </div>
       ))}
-      <p className='show-more'>Show more</p>
+      <a href='#' className='show-more'>Show more</a>
     </div>
   )
 }

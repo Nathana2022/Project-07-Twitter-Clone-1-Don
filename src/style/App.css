@@ -203,12 +203,6 @@ body{
     color: #2F3336;
 }
 
-.svg :hover{
-    color: rgb(249, 24, 128);
-    text-overflow: unset;
-    fill:currentColor;
-    overflow: hidden;
-}
 
 .tweet-action{
     display: flex;
@@ -451,6 +445,7 @@ span.sl-notification {
 .show-more{
     color: #1D9BF0;
     font-weight: bold;
+    text-decoration: none;
 }
 
 .card-two{
