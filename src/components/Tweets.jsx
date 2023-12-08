@@ -12,6 +12,7 @@ import Article from '../images/MKDART.png'
 import Election from '../images/PEUPLE ET ELECTION.png'
 import PostElection from '../images/PostElection.png'
 import Don from '../images/iconDon.png'
+import Video from '../images/Discipline_avec_Coby.mp4'
 import Tweet from './Tweet'
 
 function Tweets() {
@@ -125,7 +126,7 @@ function Tweets() {
             dure:"Oct 4"
         }],
         tweet:"Hello literally everyone",
-        phototweet:null,
+        phototweet:null, 
         iconLike :[{
     
             commentIcon:TweetReplies,
@@ -246,7 +247,44 @@ function Tweets() {
             
         }
     ],
-    }
+    },
+
+    {
+        image:Don,
+
+        user :[{
+            title:"Don Nathanaël",
+            certificateIcon: CerificateIcons,
+            email:"@nathanael_don ",
+            dure:". Aug 15"
+        }],
+        tweet:"La discipline clé de la reussite avec Coby Briant.",
+        phototweet:null,
+        videoTweet:Video,
+        iconLike :[{
+    
+            commentIcon:TweetReplies,
+            CountComment:'6.8K' 
+        },
+        {
+    
+            commentIcon:TweetPart,
+            CountComment:'36.6K'
+        },
+        {
+    
+            commentIcon:TweetLike,
+            CountComment:'267.1K'
+        },
+        {
+    
+            commentIcon:TweetShare
+            
+        }
+    ],
+    },
+
+
 ]
   return (
     <div className='tweets'>

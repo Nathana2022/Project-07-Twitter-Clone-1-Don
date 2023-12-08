@@ -8,11 +8,14 @@ import Video from '../images/Discipline_avec_Coby.mp4'
 //   )
 // }
 
-function VideoPlayer() {
+function TweetVideo() {
     return (
-      <video src={Video} controls ="autoplay loop muted " >
+      <div className='tweet-body'>
+         <video src={Video} controls autoplay loop muted >
         Votre navigateur ne prend pas en charge la lecture de vidéos.
       </video>
+      </div>
+     
     );
   }
   
