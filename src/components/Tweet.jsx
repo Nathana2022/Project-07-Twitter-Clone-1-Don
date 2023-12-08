@@ -28,7 +28,7 @@ function Tweet({Fed}) {
                         <div className='tweet-actions'>
                             {element.iconLike.map((elementLike, Id)=>(
                                 <div className='tweet-action'  key={Id}>
-                                    <img src={elementLike.commentIcon} alt="" />
+                                    <img className='svg' src={elementLike.commentIcon} alt="" />
                                     <span>{elementLike.CountComment} </span>
                                 </div> 
                                     

@@ -186,11 +186,14 @@ body{
     gap: 5rem;
     color: grey;
     font-size: 1rem;
+    cursor: pointer;
 }
 
-.tweet-actions :hover{
-    color: rgb(232, 147, 201);
-    fill: red;
+.tweet-action :hover{
+    color: rgb(249, 24, 128);
+    text-overflow: unset;
+    fill:currentColor;
+    overflow: hidden;
 }
 
 
@@ -198,6 +201,13 @@ body{
     width: 1rem;
     height: auto;
     color: #2F3336;
+}
+
+.svg :hover{
+    color: rgb(249, 24, 128);
+    text-overflow: unset;
+    fill:currentColor;
+    overflow: hidden;
 }
 
 .tweet-action{
