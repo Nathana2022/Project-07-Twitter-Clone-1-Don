@@ -204,12 +204,15 @@ body{
 /*Section SIdebar*/
 
 .left-sidebar {
-    width: 275px;
-    display: flex;
-    flex-direction: column;
-    /* justify-content: space-between; */
+    flex: 0 0 400px;
     position: sticky;
-    top: 0%;
+    padding-top: 2rem;
+    top: 0;
+    height: 100%;
+    border-left:1px solid #2F3336 ;
+    /* display: flex;
+    flex-direction: column; */
+    /* justify-content: space-between; */
 }
 
 .sl-top-section .navbar {
@@ -224,6 +227,7 @@ body{
     flex-direction: column;
     align-items: flex-start;
     gap: 8px;
+    padding-bottom: 200px;
 }
 
 .sl-top-section .navbar .li-div {
