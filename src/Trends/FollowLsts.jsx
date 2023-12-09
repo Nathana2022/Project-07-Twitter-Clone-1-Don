@@ -40,7 +40,7 @@ function FollowLsts() {
             <div className='follow-tex'>
             <h2>
               <p>{element.userName} </p>
-              <img src= {element.iconCertification} alt="" />
+              <img  className='i-certificate' src= {element.iconCertification} alt="" />
             </h2>
             <span>{element.lienProfin} </span>
           </div>
