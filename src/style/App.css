@@ -12,11 +12,11 @@ body{
 #root{
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
-.timeline {
-    flex: 0 0 800px;
+.timeline, main {
+    flex: 0 0 700px;
     font-family: 'Inter', sans-serif;
     border-left: 1px solid #2F3336;
     border-right: 1px solid #2F3336;
@@ -218,7 +218,7 @@ body{
 /*Section SIdebar*/
 
 .left-sidebar {
-    flex: 0 0 400px;
+    flex: 0 0 275px;
     position: sticky;
     padding-top: 2rem;
     top: 0;
@@ -363,12 +363,11 @@ span.sl-notification {
     /* width: 360px;
     height: 1080px;
     flex-shrink: 0; */
-    flex: 0 0 600px;
+    flex: 0 0 360px;
     position: sticky;
     padding-top: 2rem;
     top: 0;
     height: 100%;
-    border-left:1px solid #2F3336 ;
     background: var(--Black, #000);
     margin-left: 10px;
 }
