@@ -2,7 +2,8 @@ import React from "react";
 import SidebarIcons from "./SidebarIcons";
 import TwitterIcon from "./TwitterIcon";
 import avatar from '../images/profile-photo.png'
-import Badges from '../components/Badges'
+import Badges from '../components/Badges';
+import { Link } from "react-router-dom";
 
 
 export default function SidebarLeft() {
@@ -89,7 +90,7 @@ export default function SidebarLeft() {
                 <span className="sl-icon">
                   <SidebarIcons icon="profil" />
                 </span>
-                Profil
+                <Link to="/donnathanael">Profil</Link>
               </div>
             </a>
           </li>
