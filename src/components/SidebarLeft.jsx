@@ -27,7 +27,7 @@ export default function SidebarLeft() {
                 <span className="sl-icon">
                   <SidebarIcons icon="home" />
                 </span>
-                Home
+                <Link to="/">Home</Link>
               </div>
             </a>
           </li>
@@ -114,12 +114,12 @@ export default function SidebarLeft() {
           </div>
           <div className="sl-bs-body-content">
             <div className="sl-bs-body-title">
-              Bradley Ortiz{" "}
+              Don Nathanael{" "}
               <span>
                 <Badges badge="locked" /> 
               </span>
             </div>
-            <div className="sl-bs-body-username">@bradley_</div>
+            <div className="sl-bs-body-username">@donnathanael</div>
           </div>
         </a>
         <div className="more-icon">
