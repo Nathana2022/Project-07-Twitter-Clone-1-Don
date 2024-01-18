@@ -112,6 +112,7 @@ export default function SidebarLeft() {
           <div className="avatar">
           <img className='avatar' src={avatar} alt="" />
           </div>
+          <Link to="/donnathanael" className="s-link">
           <div className="sl-bs-body-content">
             <div className="sl-bs-body-title">
               Don Nathanael{" "}
@@ -121,6 +122,7 @@ export default function SidebarLeft() {
             </div>
             <div className="sl-bs-body-username">@donnathanael</div>
           </div>
+          </Link>
         </a>
         <div className="more-icon">
           <svg
