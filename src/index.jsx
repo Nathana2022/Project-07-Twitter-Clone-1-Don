@@ -5,7 +5,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Home from './pages/home';
 import Layout from './components/layout';
 import Profile from './pages/profile';
-import UserProfil from './components/UserProfil';
+
 
 const router = createBrowserRouter([
   {
@@ -17,13 +17,9 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/donnathanael",
+        path: ":username",
         element: <Profile />,
       },
-      {
-        path:"username",
-        element: <UserProfil/>
-      }
 
     ]
   }

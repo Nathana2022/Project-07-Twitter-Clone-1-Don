@@ -1,8 +1,14 @@
 import React from "react";
 import BackIcon from "../components/BackIcon";
 import ProfileActionsIcons from "../components/profileActionsIcons";
+import { useParams } from "react-router-dom";
+import users from "../modales/Users";
 
 export default function Profile() {
+  const{username}=useParams();
+    const oneData=users.find((use) =>{
+        return use.author==username;
+    });
   return (
     <main>
       <div className="profile-header">
@@ -10,21 +16,21 @@ export default function Profile() {
           <BackIcon />
         </div>
         <div className="ph-title">
-          <h1>Don Nathanael</h1>
+          <h1>{oneData.author} </h1>
           <p>560</p>
         </div>
       </div>
       <div className="profile-cover">
-        <img src="/cover.jpeg" alt="" />
+        <img src={oneData.imageCover} alt="" />
       </div>
       <div className="profile-avatar-section">
-        <img src="/profile.jpg" alt="" />
+        <img src={oneData.authorAvatar} alt="" />
         <a href="#" className="profile-edit-button">Follow me</a>
       </div>
       <div className="profile-content">
         <div className="pc-names">
-          <p className="pc-title">Don Nathanaël</p>
-          <p className="pc-username">@donnathanael</p>
+          <p className="pc-title">{oneData.author}</p>
+          <p className="pc-username">{oneData.authorDetails}</p>
         </div>
         <div className="pc-infos">
           <div>

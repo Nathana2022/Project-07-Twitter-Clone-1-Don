@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Tweet({Fed}) {
   return (
@@ -6,17 +7,22 @@ function Tweet({Fed}) {
         {Fed.map((element, index)=>(
             <div className='tweet' key={index}>
                 <side className='tweet-avatar'>
+                <Link to={`/${element.user.title}`} className='t-link'>
                     <img src={element.image} alt="" />
+                    </Link>
                 </side>
                 <div className='tweet-content'>
-                    {element.user.map((userelement, indexId) =>(
+                    
                         <div>
                             <div className='tweet-body' >
-                            <h2 className='tweet-title' key={indexId}>
-                            <span className='tweet-title-author'>{userelement.title} </span>
-                            <img className='tweet-title-author' src={userelement.certificateIcon} alt="" />
-                            <span className='tweet-title-details'>{userelement.email} </span>
-                            <span className='tweet-title-details'>{userelement.dure} </span>
+                            <h2 className='tweet-title'>
+                            <Link to={`/${element.user.title}`} className='t-link'>
+                            <span className='tweet-title-author'>{element.user.title} </span></Link>
+                            <img className='tweet-title-author' src={element.user.certificateIcon} alt="" />
+                            <Link to={`/${element.user.title}`} className='t-link'>
+                            <span className='tweet-title-details'>{element.user.email} </span>
+                            </Link>
+                            <span className='tweet-title-details'>{element.user.dure} </span>
                             </h2>
                             <p className='tweet-text'>{element.tweet} </p>
                             <div className='tweet-image'>
@@ -35,7 +41,7 @@ function Tweet({Fed}) {
                             ))}
                         </div>
                         </div>
-                    ))}
+                   
                 </div>
 
             </div>

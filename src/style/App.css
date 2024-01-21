@@ -757,3 +757,8 @@ p.pc-username {
     text-decoration: none;
     z-index: 0;
 }
+
+.t-link{
+  text-decoration: none;
+  color: white;
+}
