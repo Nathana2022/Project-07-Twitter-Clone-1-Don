@@ -4,9 +4,12 @@ import TwitterIcon from "./TwitterIcon";
 import avatar from '../images/profile-photo.png'
 import Badges from '../components/Badges';
 import { Link } from "react-router-dom";
+import users from "../modales/Users";
 
 
 export default function SidebarLeft() {
+
+  const user = users.find((use) => use.isLogin === true)
   return (
     <div className="left-sidebar">
       <div className="sl-top-section">
@@ -90,7 +93,7 @@ export default function SidebarLeft() {
                 <span className="sl-icon">
                   <SidebarIcons icon="profil" />
                 </span>
-                <Link to="/donnathanael">Profil</Link>
+                <Link to={`/${user.author}`} className="s-link">Profil</Link>
               </div>
             </a>
           </li>
@@ -108,10 +111,13 @@ export default function SidebarLeft() {
         <button className="button">Tweet</button>
       </div>
       <div className="sl-bottom-section">
-        <a href="#" className="sl-bs-body">
+        
           <div className="avatar">
+          <Link to={`/${user.author}`} className="s-link">
           <img className='avatar' src={avatar} alt="" />
+          </Link>
           </div>
+          <Link to={`/${user.author}`} className="s-link">
           <div className="sl-bs-body-content">
             <div className="sl-bs-body-title">
               Don Nathanael{" "}
@@ -121,7 +127,8 @@ export default function SidebarLeft() {
             </div>
             <div className="sl-bs-body-username">@donnathanael</div>
           </div>
-        </a>
+          </Link>
+       
         <div className="more-icon">
           <svg
             xmlns="http://www.w3.org/2000/svg"

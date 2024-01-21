@@ -6,6 +6,7 @@ import Home from './pages/home';
 import Layout from './components/layout';
 import Profile from './pages/profile';
 
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -16,9 +17,10 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/donnathanael",
+        path: ":username",
         element: <Profile />,
-      }
+      },
+
     ]
   }
 ])
