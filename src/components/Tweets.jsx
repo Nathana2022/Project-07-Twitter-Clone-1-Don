@@ -1,4 +1,5 @@
 import React from 'react'
+import { useState } from 'react'
 import TweetProfile from '../images/Logo Twitter.png'
 import CerificateIcons from '../images/Certificate.svg'
 import TweetReplies from '../images/TweetReplies.svg'
@@ -15,249 +16,275 @@ import Don from '../images/iconDon.png'
 import Tweet from './Tweet'
 import LogoTNY from '../images/LogoTNY.png'
 
-function Tweets() {
-    const tweetsObject =[
-        {
-        userId :0,
-        image:LogoCNN, 
+function Counter() {
+    const [number, setNumber] = useState(1);
+    const [isLiked, setLike] = useState(false);
 
-        user :{
-            title:"CNN",
-            certificateIcon: CerificateIcons,
-            email:"@CNN",
-            dure:"7min"
-        },
-        tweet:"President Joe Biden touted a new agreement reached with the European Union to ease Trump-era tariffs on aluminum and steel as a major breakthrough that would serve to both strengthen the US steel industry and combat the global climate crisis.",
-        phototweet:null,
-        iconLike :[{
-    
-            commentIcon:TweetReplies,
-            CountComment:57
-        },
-        {
-    
-            commentIcon:TweetPart,
-            CountComment:144
-        },
-        {
-    
-            commentIcon:TweetLike,
-            CountComment:184
-        },
-        {
-    
-            commentIcon:TweetShare
-            
+    function handleLike() {
+        if (!isLiked) {
+            setNumber(number + 1);
+            setLike(true);
+        } else {
+            setNumber(number - 1);
+            setLike(false);
         }
-    ],
-    },
-    {
-        userId:1,
-        image:LogoTNY,
+    }
 
-        user :{
-            title:"The New York Times",
-            certificateIcon: CerificateIcons,
-            email:"@nytimes",
-            dure:"2h"
-        },
-        tweet:"Gardening boomed during the pandemic. Six Black writers share how it has helped them re-establish, and reimagine, a connection to cultivation and the land",
-        phototweet:TweetImage,
-        iconLike :[{
-    
-            commentIcon:TweetReplies,
-            CountComment:19
-        },
-        {
-    
-            commentIcon:TweetPart,
-            CountComment:48
-        },
-        {
-    
-            commentIcon:TweetLike,
-            CountComment:482
-        },
-        {
-    
-            commentIcon:TweetShare
-            
-        }
-    ],
-    },
-    {
-        userId:2,
-        image:TweetLogo,
+    return {number, isLiked, handleLike }
 
-        user :{
-            title:"Twitter",
-            certificateIcon: CerificateIcons,
-            email:"@Twitter",
-            dure:"Oct 29"
-        },
-        tweet:"BIG NEWS lol jk still Twitter",
-        phototweet:null,
-        iconLike :[{
+    function Tweets() {
+        const tweetsObject =[
+            {
+            userId :0,
+            image:LogoCNN, 
     
-            commentIcon:TweetReplies,
-            CountComment:'6.8K' 
-        },
-        {
-    
-            commentIcon:TweetPart,
-            CountComment:'36.6K'
-        },
-        {
-    
-            commentIcon:TweetLike,
-            CountComment:'267.1K'
-        },
-        {
-    
-            commentIcon:TweetShare
-            
-        }
-    ],
-    },
-    {
-        userId :2,
-        image:TweetLogo,
-
-        user :{
-            title:"Twitter",
-            certificateIcon: CerificateIcons,
-            email:"@Twitter",
-            dure:"Oct 4"
-        },
-        tweet:"Hello literally everyone",
-        phototweet:null, 
-        iconLike :[{
-    
-            commentIcon:TweetReplies,
-            CountComment:'118.7K' 
+            user :{
+                title:"CNN",
+                certificateIcon: CerificateIcons,
+                email:"@CNN",
+                dure:"7min"
+            },
+            tweet:"President Joe Biden touted a new agreement reached with the European Union to ease Trump-era tariffs on aluminum and steel as a major breakthrough that would serve to both strengthen the US steel industry and combat the global climate crisis.",
+            phototweet:null,
+            iconLike :[{
+        
+                commentIcon:TweetReplies,
+                CountComment:57
+            },
+            {
+        
+                commentIcon:TweetPart,
+                CountComment:144
+            },
+            {
+        
+                commentIcon:TweetLike,
+                CountComment:184
+            },
+            {
+        
+                commentIcon:TweetShare
+                
+            }
+        ],
         },
         {
+            userId:1,
+            image:LogoTNY,
     
-            commentIcon:TweetPart,
-            CountComment:'785.4K'
+            user :{
+                title:"The New York Times",
+                certificateIcon: CerificateIcons,
+                email:"@nytimes",
+                dure:"2h"
+            },
+            tweet:"Gardening boomed during the pandemic. Six Black writers share how it has helped them re-establish, and reimagine, a connection to cultivation and the land",
+            phototweet:TweetImage,
+            iconLike :[{
+        
+                commentIcon:TweetReplies,
+                CountComment:19
+            },
+            {
+        
+                commentIcon:TweetPart,
+                CountComment:48
+            },
+            {
+        
+                commentIcon:TweetLike,
+                CountComment:482
+            },
+            {
+        
+                commentIcon:TweetShare
+                
+            }
+        ],
         },
         {
+            userId:2,
+            image:TweetLogo,
     
-            commentIcon:TweetLike,
-            CountComment:'3.3M'
+            user :{
+                title:"Twitter",
+                certificateIcon: CerificateIcons,
+                email:"@Twitter",
+                dure:"Oct 29"
+            },
+            tweet:"BIG NEWS lol jk still Twitter",
+            phototweet:null,
+            iconLike :[{
+        
+                commentIcon:TweetReplies,
+                CountComment:'6.8K' 
+            },
+            {
+        
+                commentIcon:TweetPart,
+                CountComment:'36.6K'
+            },
+            {
+        
+                commentIcon:TweetLike,
+                CountComment:'267.1K'
+            },
+            {
+        
+                commentIcon:TweetShare
+                
+            }
+        ],
         },
         {
+            userId :2,
+            image:TweetLogo,
     
-            commentIcon:TweetShare
-            
-        }
-    ],
-    },
-    {
-        image:TweetLogo,
-
-        user :{
-            title:"Twitter",
-            certificateIcon: CerificateIcons,
-            email:"@Twitter",
-            dure:"Oct 29"
-        },
-        tweet:"BIG NEWS lol jk still Twitter",
-        phototweet:null,
-        iconLike :[{
-    
-            commentIcon:TweetReplies,
-            CountComment:'6.8K' 
-        },
-        {
-    
-            commentIcon:TweetPart,
-            CountComment:'36.6K'
-        },
-        {
-    
-            commentIcon:TweetLike,
-            CountComment:'267.1K'
-        },
-        {
-    
-            commentIcon:TweetShare
-            
-        }
-    ],
-    },
-    {
-        image:Article,
-
-        user :{
-            title:"MKADIMART",
-            certificateIcon: CerificateIcons,
-            email:"@mkadimart ",
-            dure:". 1j"
-        },
-        tweet:"La pression électorale pèse lourdement sur la population. Les attentes, les promesses et les enjeux politiques créent un climat de tension. Il est crucial de prendre du recul, de s'informer et de voter en conscience pour défendre nos valeurs et nos intérêts. #Élections2023 #PressionÉlectorale",
-        phototweet:Election,
-        iconLike :[{
-    
-            commentIcon:TweetReplies,
-            CountComment:'6.8K' 
+            user :{
+                title:"Twitter",
+                certificateIcon: CerificateIcons,
+                email:"@Twitter",
+                dure:"Oct 4"
+            },
+            tweet:"Hello literally everyone",
+            phototweet:null, 
+            iconLike :[{
+        
+                commentIcon:TweetReplies,
+                CountComment:'118.7K' 
+            },
+            {
+        
+                commentIcon:TweetPart,
+                CountComment:'785.4K'
+            },
+            {
+        
+                commentIcon:TweetLike,
+                CountComment:'3.3M'
+            },
+            {
+        
+                commentIcon:TweetShare
+                
+            }
+        ],
         },
         {
+            image:TweetLogo,
     
-            commentIcon:TweetPart,
-            CountComment:'36.6K'
+            user :{
+                title:"Twitter",
+                certificateIcon: CerificateIcons,
+                email:"@Twitter",
+                dure:"Oct 29"
+            },
+            tweet:"BIG NEWS lol jk still Twitter",
+            phototweet:null,
+            iconLike :[{
+        
+                commentIcon:TweetReplies,
+                CountComment:'6.8K' 
+            },
+            {
+        
+                commentIcon:TweetPart,
+                CountComment:'36.6K'
+            },
+            {
+        
+                commentIcon:TweetLike,
+                CountComment:'267.1K'
+            },
+            {
+        
+                commentIcon:TweetShare
+                
+            }
+        ],
         },
         {
+            image:Article,
     
-            commentIcon:TweetLike,
-            CountComment:'267.1K'
+            user :{
+                title:"MKADIMART",
+                certificateIcon: CerificateIcons,
+                email:"@mkadimart ",
+                dure:". 1j"
+            },
+            tweet:"La pression électorale pèse lourdement sur la population. Les attentes, les promesses et les enjeux politiques créent un climat de tension. Il est crucial de prendre du recul, de s'informer et de voter en conscience pour défendre nos valeurs et nos intérêts. #Élections2023 #PressionÉlectorale",
+            phototweet:Election,
+            iconLike :[{
+        
+                commentIcon:TweetReplies,
+                CountComment:'6.8K' 
+            },
+            {
+        
+                commentIcon:TweetPart,
+                CountComment:'36.6K'
+            },
+            {
+        
+                commentIcon:TweetLike,
+                CountComment:'267.1K'
+            },
+            {
+        
+                commentIcon:TweetShare
+                
+            }
+        ],
         },
         {
+            image:Don,
     
-            commentIcon:TweetShare
-            
-        }
-    ],
-    },
-    {
-        image:Don,
-
-        user :{
-            title:"Don Nathanaël",
-            certificateIcon: CerificateIcons,
-            email:"@nathanael_don ",
-            dure:". Aug 15"
+            user :{
+                title:"Don Nathanaël",
+                certificateIcon: CerificateIcons,
+                email:"@nathanael_don ",
+                dure:". Aug 15"
+            },
+            tweet:"Maponomi esi ebelemi, Zua temps, Kanisa MALAMU, TALA Malamu, NANI OKOPESA KITI!",
+            phototweet:PostElection,
+            iconLike :[{
+        
+                commentIcon:TweetReplies,
+                CountComment:'6.8K' 
+            },
+            {
+        
+                commentIcon:TweetPart,
+                CountComment:'36.6K'
+            },
+            {
+        
+                commentIcon:TweetLike,
+                CountComment:'267.1K'
+            },
+            {
+        
+                commentIcon:TweetShare
+                
+            }
+        ],
         },
-        tweet:"Maponomi esi ebelemi, Zua temps, Kanisa MALAMU, TALA Malamu, NANI OKOPESA KITI!",
-        phototweet:PostElection,
-        iconLike :[{
+    ]
+      return (
+        <div className='tweets'>
+            <Tweet Fed={tweetsObject}/>
+        </div>
+      )
+    };  
     
-            commentIcon:TweetReplies,
-            CountComment:'6.8K' 
-        },
-        {
-    
-            commentIcon:TweetPart,
-            CountComment:'36.6K'
-        },
-        {
-    
-            commentIcon:TweetLike,
-            CountComment:'267.1K'
-        },
-        {
-    
-            commentIcon:TweetShare
-            
-        }
-    ],
-    },
-]
-  return (
-    <div className='tweets'>
-        <Tweet Fed={tweetsObject}/>
-    </div>
-  )
+    const tweetsAvecLikesMisAJour = tweetsObject.map(tweet => {
+        const { number, isLiked, handleLike } = Counter();
+        return { tweet, iconLike: number, isLiked, handleLike };
+      });
 }
+
+
+
+
 
 export default Tweets
