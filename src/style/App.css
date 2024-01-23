@@ -762,3 +762,13 @@ p.pc-username {
   text-decoration: none;
   color: white;
 }
+
+.backIcon{
+  cursor: pointer;
+  color: rgb(239, 243, 244);
+  fill: currentcolor;
+  height: 20px;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}

@@ -7,7 +7,7 @@ export default function BackIcon() {
     navigate(-1);
   }
   return (
-    <button onClick={handleBack}>
+    <button className= 'backIcon' onClick={handleBack}>
       <svg
       viewBox="0 0 24 24"
       aria-hidden="true"

@@ -47,7 +47,8 @@ function Tweets() {
         },
         {
     
-            commentIcon:TweetShare
+            commentIcon:TweetShare,
+            CountComment:''
             
         }
     ],
@@ -101,17 +102,17 @@ function Tweets() {
         iconLike :[{
     
             commentIcon:TweetReplies,
-            CountComment:'6.8K' 
+            CountComment:'69' 
         },
         {
     
             commentIcon:TweetPart,
-            CountComment:'36.6K'
+            CountComment:'36'
         },
         {
     
             commentIcon:TweetLike,
-            CountComment:'267.1K'
+            CountComment:'267'
         },
         {
     
@@ -135,17 +136,17 @@ function Tweets() {
         iconLike :[{
     
             commentIcon:TweetReplies,
-            CountComment:'118.7K' 
+            CountComment:'118' 
         },
         {
     
             commentIcon:TweetPart,
-            CountComment:'785.4K'
+            CountComment:'785'
         },
         {
     
             commentIcon:TweetLike,
-            CountComment:'3.3M'
+            CountComment:'33'
         },
         {
     
@@ -168,17 +169,17 @@ function Tweets() {
         iconLike :[{
     
             commentIcon:TweetReplies,
-            CountComment:'6.8K' 
+            CountComment:'69' 
         },
         {
     
             commentIcon:TweetPart,
-            CountComment:'36.6K'
+            CountComment:'36'
         },
         {
     
             commentIcon:TweetLike,
-            CountComment:'267.1K'
+            CountComment:'267'
         },
         {
     
@@ -201,17 +202,17 @@ function Tweets() {
         iconLike :[{
     
             commentIcon:TweetReplies,
-            CountComment:'6.8K' 
+            CountComment:'65' 
         },
         {
     
             commentIcon:TweetPart,
-            CountComment:'36.6K'
+            CountComment:'36'
         },
         {
     
             commentIcon:TweetLike,
-            CountComment:'267.1K'
+            CountComment:'267'
         },
         {
     
@@ -234,17 +235,17 @@ function Tweets() {
         iconLike :[{
     
             commentIcon:TweetReplies,
-            CountComment:'6.8K' 
+            CountComment:'689' 
         },
         {
     
             commentIcon:TweetPart,
-            CountComment:'36.6K'
+            CountComment:'369'
         },
         {
     
             commentIcon:TweetLike,
-            CountComment:'267.1K'
+            CountComment:'268'
         },
         {
     
@@ -261,26 +262,5 @@ function Tweets() {
   )
 };  
 
-function Counter() {
-    const [number, setNumber] = useState(1);
-    const [isLiked, setLike] = useState(false);
-
-    function handleLike() {
-        if (!isLiked) {
-            setNumber(number + 1);
-            setLike(true);
-        } else {
-            setNumber(number - 1);
-            setLike(false);
-        }
-    }
-
-    return {number, isLiked, handleLike }
-   
-    const tweetsAvecLikesMisAJour = tweetsObject.map(tweet => {
-        const { number, isLiked, handleLike } = Counter();
-        return {Tweet, iconLike: number, isLiked, handleLike };
-      });
-}
 
 export default Tweets

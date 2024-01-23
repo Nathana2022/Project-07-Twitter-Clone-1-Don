@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Counter from './Counter';
 
 function Tweet({Fed}) {
   return (
@@ -34,11 +35,13 @@ function Tweet({Fed}) {
                         <div className='tweet-actions'>
                             {element.iconLike.map((elementLike, Id)=>(
                                 <div className='tweet-action'  key={Id}>
-                                    <img className='svg' src={elementLike.commentIcon} alt="" />
-                                    <span>{elementLike.CountComment} </span>
+                                    {/* <img className='svg' src={elementLike.commentIcon} alt="" /> */}
+                                    {/* <span>{elementLike.CountComment} </span> */}
+                            <Counter  tweetLikeImg={elementLike.commentIcon} numbers={elementLike.CountComment} />
                                 </div> 
                                     
                             ))}
+                            
                         </div>
                         </div>
                    

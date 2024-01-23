@@ -25,7 +25,7 @@ function TweetEditor({onTweetSubmit}) {
         <img className='avatar' src={avatar} alt="" />
       </aside>
       <div className='tweet-editor-form'>
-      <input className= "tweet-editor-input" type="text" placeholder="What's happening?" />
+      <input className= "tweet-editor-input" type="text" placeholder="What's happening?"  onChange={handleTextChange} />
       <div className='tweet-editor-buttons'>
         <div className='tweet-editor-actions'>
           <button><img src={icon} alt="" /></button>
@@ -34,10 +34,11 @@ function TweetEditor({onTweetSubmit}) {
           <button><img src={icon3} alt="" /></button>
           <button><img src={icon4} alt="" /></button>
         </div>
-        <form onSubmit={handleSubmit}>
+        {/* <form onSubmit={handleSubmit}>
         <textarea value={Tweets} onChange={handleTextChange}></textarea>
-            <button type='submit' className='button'>Tweet</button>
-        </form>
+            
+        </form> */}
+        <button type='submit' className='button'>Tweet</button>
         
       </div>
       </div>
