@@ -1,12 +1,24 @@
 import React from 'react'
-import avatar from '../images/profile-photo.png'
+import { useState } from 'react'
+import avatar from '../images/avatarDon-removebg-preview.png'
 import icon from '../images/Group1.svg'
 import icon1 from '../images/Group5.svg'
 import icon2 from '../images/Group2.svg'
 import icon3 from '../images/Group3.svg'
 import icon4 from '../images/Group4.svg'
+import Tweets from '../components/Tweets'
 
-function TweetEditor() {
+function TweetEditor({onTweetSubmit}) {
+  const [Tweets, setTweets] = useState('');
+  const handleTextChange = (event) =>{
+    setTweets(event.target.value);
+  };
+
+  const handleSubmit =(event) =>{
+    event.preventDefault();
+    onTweetSubmit(Tweets);
+    setTweets('');
+  }
   return (
     <div className='tweet-editor'>
       <aside>
@@ -22,7 +34,11 @@ function TweetEditor() {
           <button><img src={icon3} alt="" /></button>
           <button><img src={icon4} alt="" /></button>
         </div>
-        <button className='button'>Tweet</button>
+        <form onSubmit={handleSubmit}>
+        <textarea value={Tweets} onChange={handleTextChange}></textarea>
+            <button type='submit' className='button'>Tweet</button>
+        </form>
+        
       </div>
       </div>
     </div>
