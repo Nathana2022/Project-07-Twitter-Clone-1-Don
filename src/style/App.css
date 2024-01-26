@@ -188,6 +188,8 @@ main {
   color: grey;
   font-size: 1rem;
   cursor: pointer;
+  background-color: black;
+  border: none
 }
 
 .tweet-action :hover {
@@ -208,6 +210,11 @@ main {
   align-items: center;
   justify-content: center;
   gap: 20px;
+}
+
+.tweet-actions{
+  background-color:transparent;
+  color: gray;
 }
 
 /*Section SIdebar*/
@@ -760,15 +767,14 @@ p.pc-username {
 
 .t-link{
   text-decoration: none;
-  color: white;
+  color:white;
 }
 
 .backIcon{
-  cursor: pointer;
   color: rgb(239, 243, 244);
-  fill: currentcolor;
   height: 20px;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  user-select: none;
+  
 }
+
+
+

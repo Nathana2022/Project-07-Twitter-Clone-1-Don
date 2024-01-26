@@ -15,9 +15,10 @@ import PostElection from '../images/PostElection.png'
 import Don from '../images/iconDon.png'
 import Tweet from './Tweet'
 import LogoTNY from '../images/LogoTNY.png'
+import NewTweetForm from './AffichageTweet/NewTweet'
 
 function Tweets() {
-    const tweetsObject =[
+     const tweetsObject =[
         {
         userId :0,
         image:LogoCNN, 
@@ -258,6 +259,7 @@ function Tweets() {
   return (
     <div className='tweets'>
         <Tweet Fed={tweetsObject}/>
+        <NewTweetForm fed={tweetsObject} />
     </div>
   )
 };  

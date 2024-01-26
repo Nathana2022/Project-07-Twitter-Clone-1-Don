@@ -1,13 +1,19 @@
-import React, {useState} from 'react'
+import React, {createContext, useState} from 'react'
 
-function NewTweetForm({ onTweetSubmit }) {
+
+const UserContext = createContext()
+function NewTweetForm({children,fed}) {
+const data = {fed}
     const [tweetText, setTweetText] = useState('');
+    const [tweetData, setTweetData] = useState(data);
+    
+
   
    
     return (
-      <div>
-        
-      </div>
+      <UserContext.Provider value={""}>
+
+      </UserContext.Provider>
     );
   }
   
