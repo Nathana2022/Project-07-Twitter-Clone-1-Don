@@ -1,6 +1,6 @@
-import React from 'react'
-import { useState } from 'react'
-import TweetProfile from '../images/Logo Twitter.png'
+import React, { useContext } from 'react'
+// import { useState } from 'react'
+// import TweetProfile from '../images/Logo Twitter.png'
 import CerificateIcons from '../images/Certificate.svg'
 import TweetReplies from '../images/TweetReplies.svg'
 import TweetPart from '../images/TweetPart.svg'
@@ -15,9 +15,11 @@ import PostElection from '../images/PostElection.png'
 import Don from '../images/iconDon.png'
 import Tweet from './Tweet'
 import LogoTNY from '../images/LogoTNY.png'
-import NewTweetForm from './AffichageTweet/NewTweet'
+import NewTweetForm, { UserContext } from './AffichageTweet/NewTweet'
 
 function Tweets() {
+
+    const {tweetData} = useContext(UserContext);
      const tweetsObject =[
         {
         userId :0,
@@ -49,7 +51,7 @@ function Tweets() {
         {
     
             commentIcon:TweetShare,
-            CountComment:''
+            CountComment:76
             
         }
     ],

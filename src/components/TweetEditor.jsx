@@ -7,17 +7,17 @@ import icon2 from '../images/Group2.svg'
 import icon3 from '../images/Group3.svg'
 import icon4 from '../images/Group4.svg'
 import Tweets from '../components/Tweets'
+import { useContext } from 'react'
+import { UserContext } from './AffichageTweet/NewTweet'
 
-function TweetEditor({onTweetSubmit}) {
-  const [Tweets, setTweets] = useState('');
+function TweetEditor() {
+  const {setTweetText,tweetText,addElement} = useContext(UserContext);
   const handleTextChange = (event) =>{
-    setTweets(event.target.value);
+    setTweetText(event.target.value);
   };
 
-  const handleSubmit =(event) =>{
-    event.preventDefault();
-    onTweetSubmit(Tweets);
-    setTweets('');
+  const handleSubmit = () =>{
+    addElement();
   }
   return (
     <div className='tweet-editor'>
@@ -25,7 +25,7 @@ function TweetEditor({onTweetSubmit}) {
         <img className='avatar' src={avatar} alt="" />
       </aside>
       <div className='tweet-editor-form'>
-      <input className= "tweet-editor-input" type="text" placeholder="What's happening?"  onChange={handleTextChange} />
+      <input className= "tweet-editor-input" type="text" placeholder="What's happening?"  onChange={handleTextChange} value={tweetText} />
       <div className='tweet-editor-buttons'>
         <div className='tweet-editor-actions'>
           <button><img src={icon} alt="" /></button>
@@ -38,8 +38,7 @@ function TweetEditor({onTweetSubmit}) {
         <textarea value={Tweets} onChange={handleTextChange}></textarea>
             
         </form> */}
-        <button type='submit' className='button'>Tweet</button>
-        
+        <button className='button' onClick = {() => {handleSubmit();console.log();}}>Tweet</button>
       </div>
       </div>
     </div>

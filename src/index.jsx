@@ -5,6 +5,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Home from './pages/home';
 import Layout from './components/layout';
 import Profile from './pages/profile';
+import NewTweet from './components/AffichageTweet/NewTweet'
 
 
 const router = createBrowserRouter([
@@ -27,6 +28,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    <NewTweet>
     <RouterProvider router={router} />
+    </NewTweet>
   </React.StrictMode>
 );
