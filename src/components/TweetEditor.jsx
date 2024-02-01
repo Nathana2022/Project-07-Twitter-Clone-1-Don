@@ -38,7 +38,7 @@ function TweetEditor() {
         <textarea value={Tweets} onChange={handleTextChange}></textarea>
             
         </form> */}
-        <button className='button' onClick = {() => {handleSubmit();console.log();}}>Tweet</button>
+        <button className='button' onClick = {() => {handleSubmit()}}>Tweet</button>
       </div>
       </div>
     </div>
