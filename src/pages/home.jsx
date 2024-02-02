@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../components/Header';
 import TweetEditor from '../components/TweetEditor';
-import Tweets from '../components/Tweets';
+import Tweet from '../components/Tweet';
 import NewTweet from '../components/AffichageTweet/NewTweet';
 
 import UserCard from '../components/UsersNamesAll';
@@ -16,7 +16,9 @@ function Home() {
       <NewTweet>
         <TweetEditor/>
       </NewTweet>
-      <Tweets/>
+      <Tweet/>
+
+      {/* <Tweets/> */}
       {/* <UserProfil/> */}
     </main>
   );

@@ -1,11 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Counter from './Counter';
+import tweetsObject from './components/Tweets'
 
-function Tweet({Fed}) {
+function Tweet() {
+// const data = tweetsObject;
+// console.log(data);
   return (
     <div>
-        {Fed.map((element, index)=>(
+        {data.map((element, index)=>(
             <div className='tweet' key={index}>
                 <side className='tweet-avatar'>
                 <Link to={`/${element.user.title}`} className='t-link'>

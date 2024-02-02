@@ -5,14 +5,14 @@ import TweetPart from '../../images/TweetPart.svg'
 import TweetLike from '../../images/TweetLike1.svg'
 import TweetShare from '../../images/GroupT.svg'
 import LogoCNN from '../../images/LogoCnn.png'
-import Tweets from '../../components/Tweets'
-
+// import Tweets from '../../components/Tweets'
+// import tweetsObject from './components/Tweets'
 
 export const UserContext = createContext();
-function NewTweetForm({children,fed}) {
-const data = <Tweets/>;
+function NewTweetForm({children}) {
+// const data = <Tweets/>;
     const [tweetText, setTweetText] = useState('');
-    const [tweetData, setTweetData] = useState(data);
+    const [tweetData, setTweetData] = useState();
    const addElement=()=> {
    if(tweetText!== ''){
     const dataValueTemporary = tweetData;
