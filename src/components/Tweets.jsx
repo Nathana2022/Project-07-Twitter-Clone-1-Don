@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
-// import { useState } from 'react'
-// import TweetProfile from '../images/Logo Twitter.png'
+import { useState } from 'react'
+import TweetProfile from '../images/Logo Twitter.png'
 import CerificateIcons from '../images/Certificate.svg'
 import TweetReplies from '../images/TweetReplies.svg'
 import TweetPart from '../images/TweetPart.svg'
@@ -13,13 +13,47 @@ import Article from '../images/MKDART.png'
 import Election from '../images/PEUPLE ET ELECTION.png'
 import PostElection from '../images/PostElection.png'
 import Don from '../images/iconDon.png'
-// import Tweet from './Tweet'
+// import Tweet from '../components/Tweet'
 import LogoTNY from '../images/LogoTNY.png'
 // import NewTweetForm, { UserContext } from './AffichageTweet/NewTweet'
 
 export const tweetsObject = [
+    {   userId :0,
+        image:Don,
+    
+        user :{
+            title:"Don Nathanaël",
+            certificateIcon: CerificateIcons,
+            email:"@nathanael_don ",
+            dure:". Aug 15"
+        },
+        tweet:"Maponomi esi ebelemi, Zua temps, Kanisa MALAMU, TALA Malamu, NANI OKOPESA KITI!",
+        phototweet:PostElection,
+        iconLike :[{
+    
+            commentIcon:TweetReplies,
+            CountComment:689 
+        },
+        {
+    
+            commentIcon:TweetPart,
+            CountComment:36
+        },
+        {
+    
+            commentIcon:TweetLike,
+            CountComment:268
+        },
+        {
+    
+            commentIcon:TweetShare,
+            CountComment:34
+            
+        }
+    ],
+    },
     {
-    userId :0,
+    userId :1,
     image:LogoCNN, 
 
     user :{
@@ -54,7 +88,7 @@ export const tweetsObject = [
 ],
 },
 {
-    userId:1,
+    userId:2,
     image:LogoTNY,
 
     user :{
@@ -82,13 +116,14 @@ export const tweetsObject = [
     },
     {
 
-        commentIcon:TweetShare
+        commentIcon:TweetShare,
+        CountComment:48
         
     }
 ],
 },
 {
-    userId:2,
+    userId:3,
     image:TweetLogo,
 
     user :{
@@ -102,27 +137,28 @@ export const tweetsObject = [
     iconLike :[{
 
         commentIcon:TweetReplies,
-        CountComment:'69' 
+        CountComment:69 
     },
     {
 
         commentIcon:TweetPart,
-        CountComment:'36'
+        CountComment:36
     },
     {
 
         commentIcon:TweetLike,
-        CountComment:'267'
+        CountComment:267
     },
     {
 
-        commentIcon:TweetShare
+        commentIcon:TweetShare,
+        CountComment:267
         
     }
 ],
 },
 {
-    userId :2,
+    userId :3,
     image:TweetLogo,
 
     user :{
@@ -136,21 +172,22 @@ export const tweetsObject = [
     iconLike :[{
 
         commentIcon:TweetReplies,
-        CountComment:'118' 
+        CountComment:118 
     },
     {
 
         commentIcon:TweetPart,
-        CountComment:'785'
+        CountComment:785
     },
     {
 
         commentIcon:TweetLike,
-        CountComment:'33'
+        CountComment:33
     },
     {
 
-        commentIcon:TweetShare
+        commentIcon:TweetShare,
+        CountComment:33
         
     }
 ],
@@ -169,21 +206,22 @@ export const tweetsObject = [
     iconLike :[{
 
         commentIcon:TweetReplies,
-        CountComment:'69' 
+        CountComment:69 
     },
     {
 
         commentIcon:TweetPart,
-        CountComment:'36'
+        CountComment:36
     },
     {
 
         commentIcon:TweetLike,
-        CountComment:'267'
+        CountComment:267
     },
     {
 
-        commentIcon:TweetShare
+        commentIcon:TweetShare,
+        CountComment:267
         
     }
 ],
@@ -202,21 +240,22 @@ export const tweetsObject = [
     iconLike :[{
 
         commentIcon:TweetReplies,
-        CountComment:'65' 
+        CountComment:65 
     },
     {
 
         commentIcon:TweetPart,
-        CountComment:'36'
+        CountComment:36
     },
     {
 
         commentIcon:TweetLike,
-        CountComment:'267'
+        CountComment:267
     },
     {
 
-        commentIcon:TweetShare
+        commentIcon:TweetShare,
+        CountComment:36
         
     }
 ],

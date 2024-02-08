@@ -5,7 +5,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Home from './pages/home';
 import Layout from './components/layout';
 import Profile from './pages/profile';
-import NewTweet from './components/AffichageTweet/NewTweet'
+import NewTweet from './components/NewTweet'
 
 
 const router = createBrowserRouter([

@@ -2,6 +2,7 @@ import React from "react";
 import SidebarIcons from "./SidebarIcons";
 import TwitterIcon from "./TwitterIcon";
 import avatar from '../images/profile-photo.png'
+import Don from '../images/iconDon.png'
 import Badges from '../components/Badges';
 import { Link } from "react-router-dom";
 import users from "../modales/Users";
@@ -114,7 +115,7 @@ export default function SidebarLeft() {
         
           <div className="avatar">
           <Link to={`/${user.author}`} className="s-link">
-          <img className='avatar' src={avatar} alt="" />
+          <img className='avatar' src={Don} alt="" />
           </Link>
           </div>
           <Link to={`/${user.author}`} className="s-link">

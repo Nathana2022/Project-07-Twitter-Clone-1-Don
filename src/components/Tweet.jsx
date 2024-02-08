@@ -1,15 +1,17 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import Counter from './Counter';
-import tweetsObject from './components/Tweets'
+import { UserContext } from './NewTweet';
+// import tweetsObject from '../components/Tweets'
 
 function Tweet() {
 // const data = tweetsObject;
 // console.log(data);
+const {tweetData} = useContext(UserContext)
   return (
     <div>
-        {data.map((element, index)=>(
-            <div className='tweet' key={index}>
+        {tweetData.map((element)=>(
+            <div className='tweet' key={element.userId}>
                 <side className='tweet-avatar'>
                 <Link to={`/${element.user.title}`} className='t-link'>
                     <img src={element.image} alt="" />

@@ -8,7 +8,7 @@ import icon3 from '../images/Group3.svg'
 import icon4 from '../images/Group4.svg'
 // import Tweets from '../components/Tweets'
 import { useContext } from 'react'
-import { UserContext } from './AffichageTweet/NewTweet'
+import { UserContext } from './NewTweet'
 
 function TweetEditor() {
   const {setTweetText,tweetText,addElement} = useContext(UserContext);
