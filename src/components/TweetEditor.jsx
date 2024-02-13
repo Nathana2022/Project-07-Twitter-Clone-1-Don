@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState } from 'react'
+import { useForm } from 'react-hook-form'
 import avatar from '../images/avatarDon-removebg-preview.png'
 import icon from '../images/Group1.svg'
 import icon1 from '../images/Group5.svg'
@@ -19,13 +19,30 @@ function TweetEditor() {
   const handleSubmit = () =>{
     addElement();
   }
+  const CreateTweet = () => {
+    const { register, handleSubmit, formState: { errors }, reset, watch } = useForm();
+  
+    const descriptionValue = watch('description', '');
   return (
     <div className='tweet-editor'>
       <aside>
         <img className='avatar' src={avatar} alt="" />
       </aside>
       <div className='tweet-editor-form'>
-      <input className= "tweet-editor-input" type="text" placeholder="What's happening?"  onChange={handleTextChange} value={tweetText} />
+      <form action="">
+      <input 
+        {...register("description", {required:true, maxLength: 180})}
+        className= "tweet-editor-input" 
+        type="text" 
+        placeholder="What's happening?"  
+        onChange={handleTextChange} 
+        value={tweetText} />
+        {errors.description && (
+          <p>
+            Ce champ est obligatoire et ne doit dépasser 180 caractères.
+          </p>
+        ) }
+      </form>
       <div className='tweet-editor-buttons'>
         <div className='tweet-editor-actions'>
           <button><img src={icon} alt="" /></button>
